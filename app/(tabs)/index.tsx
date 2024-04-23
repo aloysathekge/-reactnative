@@ -1,15 +1,13 @@
 import { SafeAreaView, ScrollView, StyleSheet } from "react-native";
 
-import EditScreenInfo from "@/components/EditScreenInfo";
-import { Text, View } from "@/components/Themed";
-import data from "@/data/data";
-import Accordion from "@/app/Accordion/Components/Accordion";
 import AccordionScreen from "../Accordion/AccordionScreen";
+import AuthScreen from "../Supabase/Components/AuthScreen";
 
 export default function TabOneScreen() {
   return (
     <SafeAreaView style={styles.container}>
-      <AccordionScreen />
+      {/* <AccordionScreen /> */}
+      <AuthScreen />
     </SafeAreaView>
   );
 }
